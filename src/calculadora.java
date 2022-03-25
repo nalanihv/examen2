@@ -28,4 +28,48 @@ public class calculadora {
         this.marca = marca;
         this.esCientifica = esCientifica;
     }
+    double sumar(double primerValor,double segundoValor){
+        return primerValor+segundoValor;
+    }
+    double restar(double primerValor,double segundoValor){
+        return primerValor-segundoValor;
+    }
+    double multiplicar(double primerValor,double segundoValor){
+        return primerValor*segundoValor;
+    }
+    double dividir(double primerValor,double segundoValor){
+        if(segundoValor==0){
+            return 0;
+        }
+         else{
+            return primerValor/segundoValor;
+        }
+
+    }
+    double elevarPotencia (double primerValor,double segundoValor){
+        if(esCientifica==true){
+            //Math.pow(primerValor,segundoValor);
+           // System.out.println(""+Math.pow(primerValor,segundoValor);
+            return System.out.println(""+Math.pow(primerValor,segundoValor);
+        }else {
+            System.out.println("su calculadora no es cientifica, no puede realizar esta operacion");
+            return 0;
+        }
+    }
+
+    @Override
+    public String toString() {
+        if(esCientifica==true){
+            return "La calculadora es" +
+                    " de marca '" + marca + '\'' +
+                    ", es Cientifica=" + esCientifica +
+                    '}';
+        }else{
+            return "La calculadora es" +
+                    " de marca '" + marca + '\'' +
+                    ", no es Cientifica=" + esCientifica +
+                    '}';
+        }
+    }
+
 }
