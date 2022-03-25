@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class calculadora {
 
@@ -39,7 +38,7 @@ public class calculadora {
     }
     double dividir(double primerValor,double segundoValor){
         if(segundoValor==0){
-            return 0;
+            return 0.0;
         }
          else{
             return primerValor/segundoValor;
@@ -50,7 +49,7 @@ public class calculadora {
         if(esCientifica==true){
             //Math.pow(primerValor,segundoValor);
            // System.out.println(""+Math.pow(primerValor,segundoValor);
-            return System.out.println(""+Math.pow(primerValor,segundoValor);
+            return Math.pow(primerValor,segundoValor);
         }else {
             System.out.println("su calculadora no es cientifica, no puede realizar esta operacion");
             return 0;
@@ -62,13 +61,11 @@ public class calculadora {
         if(esCientifica==true){
             return "La calculadora es" +
                     " de marca '" + marca + '\'' +
-                    ", es Cientifica=" + esCientifica +
-                    '}';
+                    ", es Cientifica=" + esCientifica ;
         }else{
             return "La calculadora es" +
                     " de marca '" + marca + '\'' +
-                    ", no es Cientifica=" + esCientifica +
-                    '}';
+                    ", no es Cientifica=" + esCientifica ;
         }
     }
 
