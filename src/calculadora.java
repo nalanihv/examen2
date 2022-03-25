@@ -23,4 +23,9 @@ public class calculadora {
     public double getSegundoValor() {return segundoValor;}
 
     public void setSegundoValor(double segundoValor) {this.segundoValor = segundoValor;}
+
+    public calculadora(String marca, boolean esCientifica) {
+        this.marca = marca;
+        this.esCientifica = esCientifica;
+    }
 }
